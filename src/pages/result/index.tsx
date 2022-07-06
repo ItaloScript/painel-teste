@@ -24,9 +24,9 @@ const Result: React.FunctionComponent<IResultProps> = (props) => {
         //get the data from the api
 
         const getData = async () => {
-            const separacao = (await fetch(`http://localhost:3001/api/get/painelCliente/separacao/${filial}/${page}/${items}`)).json()
-            const caixa = (await fetch(`http://localhost:3001/api/get/painelCliente/caixa/${filial}/${page}/${items}`)).json()
-            const expedicao = (await fetch(`http://localhost:3001/api/get/painelCliente/expedicao/${filial}/${page}/${items}`)).json()
+            const separacao = (await fetch(`http://${import.meta.env.VITE_BACKEND_URL}/get/painelCliente/separacao/${filial}/${page}/${items}`)).json()
+            const caixa = (await fetch(`http://${import.meta.env.VITE_BACKEND_URL}/get/painelCliente/caixa/${filial}/${page}/${items}`)).json()
+            const expedicao = (await fetch(`http://${import.meta.env.VITE_BACKEND_URL}/get/painelCliente/expedicao/${filial}/${page}/${items}`)).json()
             
             setData({
                 separacao,
