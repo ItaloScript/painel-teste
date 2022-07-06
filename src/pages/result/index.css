@@ -1,0 +1,11 @@
+.containers-orders{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding-top:50px;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+
+    
+}
+

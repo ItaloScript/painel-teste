@@ -1,0 +1,41 @@
+.container-cards-orders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 300px;
+    margin-top: 20px;
+
+
+}
+
+
+.container-header-order {
+
+    background-color: rgb(115, 197, 236);
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.container-card-order {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid gray;
+}
+
+.container-card-order:nth-child(odd) {
+    background-color: rgba(109, 184, 227, 0.387);
+}
