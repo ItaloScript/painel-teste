@@ -24,7 +24,7 @@ export default function TableOrders ({ title, colorHeader, bgColorHeader, urlNam
             const data = await fetch(url)
             const result = await data.json()
 
-            pageSelected.current = (pageSelected.current % result.totalPages) + 1
+            pageSelected.current = (pageSelected.current % parseInt(result[0].paginas) ) + 1
             setOrders(result.orders)
 
         },4000)
@@ -46,7 +46,7 @@ export default function TableOrders ({ title, colorHeader, bgColorHeader, urlNam
         {
             orders.map((order: any) => 
                 <div className='container-card-order'>
-                    {order}
+                    {order.nr_pedido}
                 </div>
             )
         }
